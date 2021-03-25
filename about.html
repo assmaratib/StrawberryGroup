@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
     <title>The Small List</title> 
 </head>
 <body>
@@ -12,18 +14,28 @@
     <header>
         <img src="OfficialLogo.png" style="margin: auto; padding: 5px 0px 0px 20px; height: 200px; border-radius: 50%;"/>
         <!--Want to add hoover interaction ( it get biger the logo when you go on it with mouse) and link to homepage when you click on it-->
-        <nav style="position: fixed; right: 500px; left: 900px; top: 20px; border-style: double;">
-            <a href="index.html">  Home  </a>
-            <a href="about.html">  About us  </a>
-            <a href="service.html">  Our Service  </a>
-            <a href="categories.html">  Categories  </a>
-            <a href="#">?</a>
+        <nav class="Nav">
+            <ul>
+                <li> <a href="index.html">  Home  </a> </li>
+                <li><a href="about.html"> About us  </a> </li>
+                <li><a href="service.html"> Our Service  </a> </li>
+                <li><a href="categories.html"> Categories  </a></li>
+        
+            </ul>
             
         </nav>
+       <div id="help">
+            <img src="help.png" alt="Help Icon"/>
+        </div>
     </header>
-    <!--Main-->
-    <main>
+    <!--Main
         
+        if I want to add the background img to the main I need 
+        to add: class="BackImg"
+    -->
+    <main >
+        
+        <div>
         <hr>
                 <!--Slide Images
                 to creade a slide show I am going to use div with all the img -->
@@ -90,14 +102,15 @@
                 dots[slideIndex-1].className += "active";
                 }
         </script>
+        </div>
         <hr>
         <div>
             <h2>
                 Our Mission
             </h2>
             <br>
-            <p> Our mission is the help small businesses during this difficult moment to create a network and to have a unique platform where can be ound. 
-                We will check the request from the businesses to ensure quality and meritocracy and want to give be a bridge between customers and small businesses.
+            <p> <b>Our mission is the help small businesses during this difficult moment to create a network and to have a unique platform where can be ound. 
+                We will check the request from the businesses to ensure quality and meritocracy and want to give be a bridge between customers and small businesses.</b>
             </p>
         </div>
         
@@ -105,8 +118,9 @@
         
     </main>
     <!--Footer-->
-    <footer style="background-color: black; color: blanchedalmond; text-align: center; position: relative; padding-bottom: 0px; ">
-            This is the footer containing the copyright  &copy;
+    <footer>
+        <p>This is the footer containing the copyright  &copy;</p>
+        <br>
     </footer>
 </body>
 </html>

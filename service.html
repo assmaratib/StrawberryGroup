@@ -4,30 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenCatalogue</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <title>The Small List</title> 
 </head>
 <body>
     <!--Header-->
     <header>
-        <img src="logo.png" style="margin: auto; padding: 5px 0px 0px 20px; height: 100px;"/>
+        <img src="OfficialLogo.png" style="margin: auto; padding: 5px 0px 0px 20px; height: 200px; border-radius: 50%;"/>
         <!--Want to add hoover interaction ( it get biger the logo when you go on it with mouse) and link to homepage when you click on it-->
-        <nav style="position: fixed; right: 0px; left: 500px; top: 0px;">
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="service.html">Our Service</a>
-            <a href="categories.html">Categories</a>
-            <a href="#">?</a>
-            
+        <nav class="Nav">
+            <ul>
+                <li> <a href="index.html">  Home  </a> </li>
+                <li><a href="about.html"> About us  </a> </li>
+                <li><a href="service.html"> Our Service  </a> </li>
+                <li><a href="categories.html"> Categories  </a></li>
+        
+            </ul>
         </nav>
+        <div id="help">
+            <img src="help.png" alt="Help Icon"/>
+        </div>
     </header>
     <!--Main-->
     <main>
         <hr>
-        THIS IS THE MAIN!
+        <h2>"THE SMALL LIST" PROVIDE A GREAT SERVICE FOR BUSINESSES AND COSTUMERS</h2>
+        
+        <section class="forBusinesses">
+            <img 
+                class="ServiceImgBack"
+                src="SmallBus_img/img14.jpg"
+                alt="Small Businesses composition"
+            >
+            <div class="BusinessDiv">
+                <div class="ServiceIntro">
+                    <h3>Do you own a Small Business?</h3>
+                    <h4>Add your Small Business in "the Small List"</h4>
+                </div>
+                <img 
+                    src="SmallBus_img/img11.jpeg" 
+                    alt="Support Small Businesses Image" 
+                    style="width: 800px; height: 400px;"/>
+                <p class="serviceParagh">Add your business and let customers find you, it s easy but efficient.
+                    Submit a request by completing the form avaiable <a href="HomeP.html"><b>here</b></a> and wait max5 working days 
+                    for the result. If approved your Company details will be uploaded on the Small List available <a href="categories.html"><b>here</b></a>
+                </p>
+            </div>
+        </section>
+        <section class="forCustomers">
+            <img 
+                class="ServiceImgBack"
+                src="SmallBus_img/img14.jpg"
+                alt="Small Businesses composition"
+            >
+            <div class="BusinessDiv">
+                <div class="ServiceIntro">
+                    <h3>Are you a customer looking for SmallBusinesses to support?</h3>
+                    <h4>You create for you a strong list of Small Businesses.</h4>
+                </div>
+                <img 
+                    src="SmallBus_img/img12.png" 
+                    alt="find small businesses" 
+                    style="width: 800px; height: 400px;"/>
+                <p class="serviceParagh">Support your local businesses by sharing with them this website so they can join the list and 
+                    when you need to but something search if there is in the list a company that provide the product or
+                    service that you are looking for.
+
+                    Lets support our Local Small Businesses.
+                </p>
+            </div>
+        </section>
         <hr>
     </main>
     <!--Footer-->
-    <footer style="background-color: black; color: blanchedalmond; text-align: center; position: relative; padding-bottom: 0px; ">
+    <footer>
             This is the footer containing the copyright  &copy;
     </footer>
 </body>
